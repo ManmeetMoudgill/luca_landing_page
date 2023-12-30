@@ -1,13 +1,18 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import NavbarListItem from "./navbarListItem";
 import UserInformationLogo from "./userInfoLogo";
 import { BsList } from "react-icons/bs";
 import SideBar from "../sidebar";
+import { disableScroolbar } from "@/hooks/disableScroolbar";
 interface HeaderProps {}
 
 const Header = (props: HeaderProps) => {
   const [isSidebarOpen, setIsSidebarOpen] = useState<boolean>(false);
+  const [currentActiveLink, setCurrentActiveLink] = useState<string>("about");
+
+  disableScroolbar({ isSidebarOpen });
+
   return (
     <>
       <div className="bg-black px-2 md:px-7 py-5 lg:px-5 lg:py-5 flex  justify-center items-center  ">
@@ -45,7 +50,11 @@ const Header = (props: HeaderProps) => {
         </div>
       </div>
 
-      <SideBar isSideBarOpen={isSidebarOpen} />
+      <SideBar
+        isSideBarOpen={isSidebarOpen}
+        currentActiveLink={currentActiveLink}
+        setCurrentActiveLink={setCurrentActiveLink}
+      />
     </>
   );
 };
