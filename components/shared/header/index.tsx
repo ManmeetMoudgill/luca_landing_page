@@ -1,13 +1,13 @@
-import Image from "next/image";
-import Link from "next/link";
-import React from "react";
-import { MdVerified } from "react-icons/md";
+"use client";
+import React, { useState } from "react";
 import NavbarListItem from "./navbarListItem";
 import UserInformationLogo from "./userInfoLogo";
 import { BsList } from "react-icons/bs";
+import SideBar from "../sidebar";
 interface HeaderProps {}
 
 const Header = (props: HeaderProps) => {
+  const [isSidebarOpen, setIsSidebarOpen] = useState<boolean>(false);
   return (
     <>
       <div className="bg-black px-2 md:px-7 py-5 lg:px-5 lg:py-5 flex  justify-center items-center  ">
@@ -32,13 +32,20 @@ const Header = (props: HeaderProps) => {
 
           <div className="flex items-center ">
             <div className="border-[2px] rounded-md shadow-md border-green-200 w-[2.3rem] h-[2.3rem] sm:w-[2.7rem] sm:h-[2.7rem] flex justify-center items-center">
-              <div className="w-[1.6rem] h-[1.6rem] sm:w-[2.1rem] sm:h-[2.1rem] flex justify-center items-center bg-[#5FFDAA]">
+              <div
+                className="w-[1.6rem] h-[1.6rem] sm:w-[2.1rem] sm:h-[2.1rem] flex justify-center items-center bg-[#5FFDAA]"
+                onClick={() => {
+                  setIsSidebarOpen(!isSidebarOpen);
+                }}
+              >
                 <BsList color="black" className="text-3xl font-bold" />
               </div>
             </div>
           </div>
         </div>
       </div>
+
+      <SideBar isSideBarOpen={isSidebarOpen} />
     </>
   );
 };
