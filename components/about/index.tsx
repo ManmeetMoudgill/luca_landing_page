@@ -6,10 +6,10 @@ const About = () => {
   return (
     <div className="text-[#707070] text-xl px-[1.5rem] md:px-[5rem]  justify-center items-center">
       <div className=" justify-center items-center py-12 md:py-16">
-        <div className="md:mx-auto md:w-[90%] lg:w-[70%]">
+        <div className="md:mx-auto md:w-[90%] lg:w-[60%]">
           <div className="flex flex-col justify-between items-center md:flex-row ">
-            <div className="md:w-[10%]">
-              <div className="border-2 border-[#5FFDAA] p-2 rounded-full w-[7rem] h-[7rem] ">
+            <div className="mx-2 ">
+              <div className="border-2 border-[#5FFDAA] p-[0.5rem] rounded-full w-[7rem] h-[7rem] ">
                 <Image
                   src="/assets/images/site_img.jpeg"
                   alt="Profile pic"
@@ -19,7 +19,7 @@ const About = () => {
                 />
               </div>
             </div>
-            <div className="md:w-[77%]">
+            <div className="flex-grow mx-2 pl-2 ">
               <p className="font-base leading-6 mt-8 md:mt-0 text-center break-words md:text-left">
                 Hi - I am Valeriia Mishchenko and you may already know me for my
                 Forex Expert Advisors which are rated among the best ones in the
