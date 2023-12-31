@@ -3,7 +3,6 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Footer from "@/components/shared/footer/index";
 import Header from "@/components/shared/header/index";
-import SideBar from "@/components/shared/sidebar";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -19,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="icon" type="image" href="/assets/images/icon.jpg" />
+        <link rel="icon" type="image" href="/assets/images/site_logo.svg" />
       </head>
       <body className={inter.className}>
         <Header />

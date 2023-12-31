@@ -1,12 +1,12 @@
 import { useEffect } from "react";
 
 interface DisableScroolbarProps {
-  isSidebarOpen: boolean;
+  condition?: boolean;
 }
 
-export const disableScroolbar = ({ isSidebarOpen }: DisableScroolbarProps) => {
+export const disableScroolbar = ({ condition }: DisableScroolbarProps) => {
   useEffect(() => {
-    if (isSidebarOpen) {
+    if (condition) {
       document.body.style.overflow = "hidden";
     } else {
       document.body.style.overflow = "auto";
@@ -15,5 +15,5 @@ export const disableScroolbar = ({ isSidebarOpen }: DisableScroolbarProps) => {
     return () => {
       document.body.style.overflow = "auto";
     };
-  }, [isSidebarOpen]);
+  }, [condition]);
 };

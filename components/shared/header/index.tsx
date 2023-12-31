@@ -11,7 +11,7 @@ const Header = (props: HeaderProps) => {
   const [isSidebarOpen, setIsSidebarOpen] = useState<boolean>(false);
   const [currentActiveLink, setCurrentActiveLink] = useState<string>("about");
 
-  disableScroolbar({ isSidebarOpen });
+  disableScroolbar({ condition: isSidebarOpen });
 
   return (
     <>
@@ -22,10 +22,10 @@ const Header = (props: HeaderProps) => {
           {/* RIGHT UPPER CONTAINER */}
           <div className=" w-[70%] ">
             <ul className="flex items-center justify-center">
-              <NavbarListItem text="About" link="#about" />
-              <NavbarListItem text="Expert Advisiors" link="#expertAdvisiors" />
-              <NavbarListItem text="Testimonials" link="#testimonials" />
-              <NavbarListItem text="Contact Us" link="#contactUs" />
+              <NavbarListItem text="Chi sono" link="#chiSono" />
+              <NavbarListItem text="Recensioni" link="#recensioni" />
+              <NavbarListItem text="Risultati" link="#risultati" />
+              <NavbarListItem text="Contatta ci" link="#contattaCi" />
             </ul>
           </div>
         </div>

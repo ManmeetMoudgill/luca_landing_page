@@ -14,11 +14,12 @@ const UserInformationLogo = (props: Props) => {
           <div className="w-[2.6rem] h-[2.6rem] sm:w-[3.6rem] sm:h-[3.6rem]  md:w-[5.3rem] md:h-[5.3rem] rounded-full">
             <Link href="/">
               <Image
-                src={"/assets/images/icon.jpg"}
+                priority={true}
+                src="/assets/images/site_img.jpeg"
                 alt="Picture of the author"
                 width={216}
                 height={216}
-                className="rounded-full w-full h-full"
+                className="rounded-full w-full h-full object-cover"
               />
             </Link>
           </div>

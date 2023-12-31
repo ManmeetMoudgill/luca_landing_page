@@ -23,29 +23,29 @@ const SideBar = ({
           setCurrentActiveLink={setCurrentActiveLink}
           currentActiveLink={currentActiveLink}
           isForMobileDevice
-          text="About"
-          link="#about"
+          text="Chi sono"
+          link="#chiSono"
         />
         <NavbarListItem
           setCurrentActiveLink={setCurrentActiveLink}
           currentActiveLink={currentActiveLink}
           isForMobileDevice
-          text="Expert Advisiors"
-          link="#expertAdvisiors"
+          text="Recensioni"
+          link="#recensioni"
         />
         <NavbarListItem
           setCurrentActiveLink={setCurrentActiveLink}
           currentActiveLink={currentActiveLink}
           isForMobileDevice
-          text="Testimonials"
-          link="#testimonials"
+          text="Risultati"
+          link="#risultati"
         />
         <NavbarListItem
           setCurrentActiveLink={setCurrentActiveLink}
           currentActiveLink={currentActiveLink}
           isForMobileDevice
-          text="Contact Us"
-          link="#contactUs"
+          text="Contatta ci"
+          link="#contattaCi"
         />
       </ul>
     </div>
