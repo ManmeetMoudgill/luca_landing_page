@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
-
+import LinkText from "../shared/linkText";
+import GreenText from "../shared/greenText";
 const About = () => {
   return (
     <div className="text-[#707070] text-xl px-[1.5rem] md:px-[5rem]  justify-center items-center">
@@ -10,7 +11,7 @@ const About = () => {
             <div className="md:w-[10%]">
               <div className="border-2 border-[#5FFDAA] p-2 rounded-full w-[7rem] h-[7rem] ">
                 <Image
-                  src="/assets/images/icon.jpg"
+                  src="/assets/images/site_img.jpeg"
                   alt="Profile pic"
                   width={114}
                   height={114}
@@ -29,34 +30,18 @@ const About = () => {
           <div className="mt-12">
             <p className="mb-4">
               I've been developing algo-trading systems for over 10 years, with
-              some of them reaching &nbsp;
-              <span>
-                <a href="" className="decoration-solid text-[#007bff] ">
-                  +7800% account growth
-                </a>
-              </span>
-              &nbsp; with over +67 consecutive months in profit, all of which
-              live track-records are available on my verified&nbsp;
-              <span>
-                <a href="" className="decoration-solid text-[#007bff] ">
-                  MyFxBook
-                </a>
-              </span>
-              &nbsp; profile as well as on the live signals of my&nbsp;
-              <span>
-                <a href="" className="decoration-solid text-[#007bff] ">
-                  MQL market profile
-                </a>
-              </span>
-              &nbsp;
+              some of them reaching
+              <LinkText text="+7800% account growth" />
+              with over +67 consecutive months in profit, all of which live
+              track-records are available on my verified
+              <LinkText text="MyFxBook" />
+              profile as well as on the live signals of my
+              <LinkText text="MQL market profile" />
             </p>
             <p className="mb-4">
               So trust me. I'm an expert when it comes to developing EAs that
-              will exploit market opportunities to&nbsp;
-              <span className="font-bold bg-[#5FFDAA] text-black">
-                make you big profits on autopilot
-              </span>
-              &nbsp;
+              will exploit market opportunities to
+              <GreenText text="make you big profits on autopilot" />
             </p>
           </div>
         </div>
