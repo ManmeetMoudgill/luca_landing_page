@@ -8,3 +8,14 @@
 *{
   font-family: 'Rubik', sans-serif;
 }
+
+.arrow__bottom{
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 36px 108px 0 108px;
+  transform: rotate(0);
+  top: 0;
+  position: absolute;
+  border-color: black  transparent transparent transparent;
+}
