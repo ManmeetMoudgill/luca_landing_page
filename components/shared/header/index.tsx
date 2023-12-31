@@ -4,7 +4,7 @@ import NavbarListItem from "./navbarListItem";
 import UserInformationLogo from "./userInfoLogo";
 import { BsList } from "react-icons/bs";
 import SideBar from "../sidebar";
-import { disableScroolbar } from "@/hooks/disableScroolbar";
+import { disableScroolbar } from "@/hooks/useDisableScroolbar";
 interface HeaderProps {}
 
 const Header = (props: HeaderProps) => {
@@ -39,11 +39,16 @@ const Header = (props: HeaderProps) => {
             <div className="border-[2px] rounded-md shadow-md border-green-200 w-[2.3rem] h-[2.3rem] sm:w-[2.7rem] sm:h-[2.7rem] flex justify-center items-center">
               <div
                 className="w-[1.6rem] h-[1.6rem] sm:w-[2.1rem] sm:h-[2.1rem] flex justify-center items-center bg-[#5FFDAA]"
-                onClick={() => {
+                onClick={(e) => {
+                  e.stopPropagation();
                   setIsSidebarOpen(!isSidebarOpen);
                 }}
               >
-                <BsList color="black" className="text-3xl font-bold" />
+                <BsList
+                  id="toggle__side__bar__button"
+                  color="black"
+                  className="text-3xl font-bold"
+                />
               </div>
             </div>
           </div>
@@ -52,6 +57,7 @@ const Header = (props: HeaderProps) => {
 
       <SideBar
         isSideBarOpen={isSidebarOpen}
+        setSidebarOpen={setIsSidebarOpen}
         currentActiveLink={currentActiveLink}
         setCurrentActiveLink={setCurrentActiveLink}
       />
