@@ -1,9 +1,13 @@
+import About from "@/components/about";
 import IntroductionContainer from "@/components/introductionContainer";
+import Information from "@/components/information";
 
 export default function Home() {
   return (
-    <main className="flex min-h-[70vh] flex-col ">
+    <main className="flex  flex-col ">
       <IntroductionContainer />
+      <About />
+      <Information />
     </main>
   );
 }
