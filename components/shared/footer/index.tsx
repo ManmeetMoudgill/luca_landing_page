@@ -1,43 +1,33 @@
 import React from "react";
-import { FaLocationArrow } from "react-icons/fa6";
-import { IoLogoYoutube } from "react-icons/io5";
+import { FaLocationArrow } from "react-icons/fa";
+import { FaYoutube } from "react-icons/fa6";
 import { SUPPORT_LIST } from "./constants";
+type Props = {};
 
-interface FooterProps {}
-
-const Footer = (props: FooterProps) => {
+const Footer = (props: Props) => {
   return (
-    <>
-      <div className="px-3 py-5 bg-black text-white flex flex-col lg:flex-row lg:justify-around lg:p-8">
-        <div className="flex flex-col  items-start">
-          <h1 className="mt-2 text-lg">Follow me on social media</h1>
-          <div className="flex  my-4">
-            <div className=" bg-[#5FFDAA] p-2 rounded-lg mr-3 lg:mr-5 hover:bg-black border border-[rgb(95,253,170)] ">
-              <FaLocationArrow className="text-xl bg" />
-            </div>
-            <div className=" bg-[#5FFDAA] p-2 rounded-lg hover:bg-black border border-[#5FFDAA] ">
-              <IoLogoYoutube className="text-xl" />
-            </div>
+    <div className="bg-black text-white py-5 px-10 flex flex-col lg:flex-row lg:justify-around">
+      <div className="flex flex-col">
+        <span className="text-xl mt-3">Follow me on social media</span>
+        <div className="flex items-center my-5">
+          <div className="hover:bg-black mr-3 transition-all delay-75 ease-in-out lg:mr-5 rounded-lg p-2 border border-[#5FFDAA] bg-[#5FFDAA] cursor-pointer">
+            <FaLocationArrow className="text-xl" />
           </div>
-        </div>
-        <div className="border border-white" />
-        <div className=" p-2">
-          <h1 className="text-lg my-2">Support</h1>
-          <div className="flex flex-wrap ">
-            {SUPPORT_LIST?.map((item, index) => (
-              <span key={item.text} className="mr-5 ">
-                {item.text}
-              </span>
-            ))}
+          <div className="hover:bg-black transition-all delay-75 ease-in-out rounded-lg p-2 border border-[#5FFDAA] bg-[#5FFDAA] cursor-pointer">
+            <FaYoutube className="text-xl" />
           </div>
         </div>
       </div>
-      <div className="bg-white my-3 ">
-        <p className="ml-3 sm:ml-10 text-base">
-          Luca Cupellaro Trading @ 2023-24 All rights reserved
-        </p>
+      <div className="border border-white" />
+      <div className="flex flex-col">
+        <span className="text-xl mt-3 ">Support</span>
+        <div className="flex flex-wrap my-5 ">
+          {SUPPORT_LIST.map((item) => (
+            <span className="mr-5">{item.title}</span>
+          ))}
+        </div>
       </div>
-    </>
+    </div>
   );
 };
 

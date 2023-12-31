@@ -2,21 +2,19 @@ import { SupportListType } from "./types";
 
 export const SUPPORT_LIST: Array<SupportListType> = [
   {
-    text: "Help Center",
+    title: "FAQ",
+    link: "/faq",
   },
   {
-    text: "Contact",
+    title: "Contact",
+    link: "/contact",
   },
   {
-    text: "Telegram",
+    title: "Privacy Policy",
+    link: "/privacy-policy",
   },
   {
-    text: "Guide",
-  },
-  {
-    text: "Tutorials",
-  },
-  {
-    text: "Terms",
+    title: "Terms of Use",
+    link: "/terms-of-use",
   },
 ];

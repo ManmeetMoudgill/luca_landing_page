@@ -1,3 +1,4 @@
 export interface SupportListType {
-  text: string;
+  title: string;
+  link: string;
 }
