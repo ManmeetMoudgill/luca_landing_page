@@ -11,9 +11,9 @@ const index = () => {
         </span> */}
           <div className="richtextblock pl-8">
             <div className="flex flex-grow">
-              <div className="wrappertext grid grid-cols-2  gap-4 border border-red-600 pl-[1.25rem] pb-[1.25rem] ">
-                <div className="bg-[#EDEDED] rounded-lg col-span-1  h-[8rem]" />
-                <div className="bg-[#EDEDED] rounded-lg  col-span-1 h-[8rem] ">
+              <div className="w-full wrappertext grid grid-cols-[1fr,1fr] lg:grid-cols-[18rem,18rem] grid-rows-[1fr,1fr] lg:grid-rows-[18rem,18rem] gap-3 lg:gap-12 border border-red-600 pl-[1.25rem] pb-[1.25rem] lg:pl-12 lg:pb-12">
+                <div className="bg-[#EDEDED] rounded-lg  w-full h-[10rem] sm:h-[14rem] " />
+                <div className="bg-[#EDEDED] rounded-lg w-full  h-[10rem] sm:h-[14rem]  ">
                   <Image
                     alt="Traders"
                     height={100}
@@ -22,8 +22,8 @@ const index = () => {
                     className="rounded-lg w-full h-[94%] object-cover"
                   />
                 </div>
-                <div className="bg-[#EDEDED]   col-span-1 rounded-lg  h-[8rem]" />
-                <div className="bg-[#EDEDED]  col-span-1  rounded-lg h-[8rem]" />
+                <div className="bg-[#EDEDED]    rounded-lg w-full h-[10rem] sm:h-[14rem] " />
+                <div className="bg-[#EDEDED]  rounded-lg w-full h-[10rem] sm:h-[14rem] " />
               </div>
             </div>
           </div>
