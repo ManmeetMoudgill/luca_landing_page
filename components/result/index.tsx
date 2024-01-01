@@ -18,6 +18,13 @@ const index = () => {
         positionImg="right"
         imgSource="/assets/images/2.jpeg"
       />
+      <PictureInfo
+        title="The EA that cracked the AI formula"
+        heading="PERCEPTRADER AI"
+        paragraphs={PARA1}
+        positionImg="left"
+        imgSource="/assets/images/3.jpeg"
+      />
     </div>
   );
 };
