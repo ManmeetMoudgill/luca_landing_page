@@ -23,7 +23,9 @@ const Footer = (props: Props) => {
         <span className="text-xl mt-3 ">Support</span>
         <div className="flex flex-wrap my-5 ">
           {SUPPORT_LIST.map((item) => (
-            <span className="mr-5">{item.title}</span>
+            <span className="mr-5" key={item.link}>
+              {item.title}
+            </span>
           ))}
         </div>
       </div>
