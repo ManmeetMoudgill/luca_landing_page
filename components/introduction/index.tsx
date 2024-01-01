@@ -1,5 +1,5 @@
 import React from "react";
-import Reviews from "../shared/reviews";
+import Reviews from "../shared/review";
 
 type Props = {};
 
