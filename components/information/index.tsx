@@ -4,7 +4,7 @@ import GreenText from "../shared/greenText";
 const index = () => {
   return (
     <div className=" text-xl px-[1.5rem] md:px-[5rem]  justify-center items-center">
-      <div className=" justify-center items-center py-12 md:py-16">
+      <div className=" justify-center items-center py-8 md:py-12">
         <div className="md:mx-auto md:w-[90%] lg:w-[60%]">
           <div className="flex flex-col justify-between items-center ">
             <p className=" text-[#707070]">AND LET ME TELL YOU THIS</p>
