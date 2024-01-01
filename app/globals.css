@@ -19,3 +19,6 @@
   position: absolute;
   border-color: black  transparent transparent transparent;
 }
+.bend_to_y_axis img {
+  transform: perspective(500px) rotateY(10deg);
+}
