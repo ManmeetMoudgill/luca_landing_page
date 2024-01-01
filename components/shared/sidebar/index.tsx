@@ -1,9 +1,12 @@
-import React from "react";
+"use client";
+import React, { memo, useRef } from "react";
 import NavbarListItem from "../header/navbarListItem";
+import useClickOutside from "@/hooks/useClickOutSide";
 
 type SideBarProps = {
   isSideBarOpen?: boolean;
   currentActiveLink?: string;
+  setSidebarOpen?: React.Dispatch<React.SetStateAction<boolean>>;
   setCurrentActiveLink?: React.Dispatch<React.SetStateAction<string>>;
 };
 
@@ -11,12 +14,24 @@ const SideBar = ({
   isSideBarOpen,
   currentActiveLink,
   setCurrentActiveLink,
+  setSidebarOpen,
 }: SideBarProps) => {
+  const ref = useRef<HTMLDivElement | null>(null);
+
+  useClickOutside<HTMLDivElement>({
+    ref: ref,
+    callback: () => {
+      setSidebarOpen!(false);
+    },
+    isCallbackEnabled: true,
+  });
+
   return (
     <div
-      className={` ${
+      ref={ref}
+      className={`  ${
         isSideBarOpen ? "left-0" : "-left-full"
-      } top-0 transition-all delay-100 flex lg:hidden ease-out relative w-[75%]  bg-black h-[89vh]`}
+      }  top-[6rem] md:top-[8rem]  z-[111] transition-all  delay-100 flex lg:hidden ease-out absolute w-[75%]  bg-black h-screen`}
     >
       <ul className="flex flex-col mt-6 w-full">
         <NavbarListItem
@@ -52,4 +67,4 @@ const SideBar = ({
   );
 };
 
-export default SideBar;
+export default memo(SideBar);
