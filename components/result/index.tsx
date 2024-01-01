@@ -1,20 +1,6 @@
 import React from "react";
 import PictureInfo from "../shared/pictureInfo";
-import { ParaType } from "./types";
-const PARA1: ParaType[] = [
-  {
-    text: "Perceptrader AI is a cutting-edge grid trading system that leverages the power of Artificial Intelligence",
-  },
-  {
-    text: "It utilizes Deep Learning algorithms and Artificial Neural Networks (ANN) to analyze big amounts of market data at a high speed and detect high-potential trading opportunities to exploit",
-  },
-  {
-    text: "Perceptrader AI shares the proven trading stategy and logic with the record-breaking Expert Advisor, Waka Waka",
-  },
-  {
-    text: "It is a fully automated system that can be used by both beginners and experienced traders",
-  },
-];
+import { PARA1 } from "./constants";
 const index = () => {
   return (
     <div>
@@ -22,6 +8,15 @@ const index = () => {
         title="The EA that cracked the AI formula"
         heading="PERCEPTRADER AI"
         paragraphs={PARA1}
+        positionImg="left"
+        imgSource="/assets/images/1.jpeg"
+      />
+      <PictureInfo
+        title="The EA that cracked the AI formula"
+        heading="PERCEPTRADER AI"
+        paragraphs={PARA1}
+        positionImg="right"
+        imgSource="/assets/images/2.jpeg"
       />
     </div>
   );
