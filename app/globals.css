@@ -39,3 +39,9 @@
     bottom: 10px;
     left: 10px;
 }
+
+.bend_to_y_axis_positive img {
+  transform: perspective(500px) rotateY(10deg);
+}.bend_to_y_axis_negative img {
+  transform: perspective(500px) rotateY(-10deg);
+}
