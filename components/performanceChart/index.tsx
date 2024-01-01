@@ -1,30 +1,63 @@
-import Image from "next/image";
 import React from "react";
 
-const index = () => {
+const PerformanceChart = () => {
   return (
     <div className="px-[1.5rem] md:px-[5rem]">
-      <div className="py-8 md:py-12 relative border border-blue-500">
-        <div className="rich-text-fullwidth md:mx-auto md:w-[70%] lg:w-[60%] border border-emerald-600">
-          {/*   <span className="border border-black text-[#ababab] abolsute w-[30px] inset-y-0 left-0  flex justify-center items-center">
-          Performance
-        </span> */}
-          <div className="richtextblock pl-8">
-            <div className="flex flex-grow">
-              <div className="w-full wrappertext grid grid-cols-[1fr,1fr] lg:grid-cols-[18rem,18rem] grid-rows-[1fr,1fr] lg:grid-rows-[18rem,18rem] gap-3 lg:gap-12 border border-red-600 pl-[1.25rem] pb-[1.25rem] lg:pl-12 lg:pb-12">
-                <div className="bg-[#EDEDED] rounded-lg  w-full h-[10rem] sm:h-[14rem] " />
-                <div className="bg-[#EDEDED] rounded-lg w-full  h-[10rem] sm:h-[14rem]  ">
-                  <Image
-                    alt="Traders"
-                    height={100}
-                    width={100}
-                    src="/assets/images/site_img.jpeg"
-                    className="rounded-lg w-full h-[94%] object-cover"
-                  />
-                </div>
-                <div className="bg-[#EDEDED]    rounded-lg w-full h-[10rem] sm:h-[14rem] " />
-                <div className="bg-[#EDEDED]  rounded-lg w-full h-[10rem] sm:h-[14rem] " />
-              </div>
+      <div className="py-8 md:py-12 relative ">
+        <div className=" md:mx-auto md:w-[95%] lg:w-[75%] xl:w-[55%] border-2 border-red-900 flex justify-center ">
+          <div
+            style={{
+              width: "min-content",
+            }}
+            className="border-2 relative border-yellow-500  gap-[10px] sm:gap-8  grid  p-6 min-[375px]:p-10   min-[320px]:grid-cols-[120px,120px] min-[320px]:grid-rows-[120px,120px]  min-[375px]:grid-cols-[1fr,1fr] min-[375px]:grid-rows-[1fr,1fr]  md:grid-cols-[16rem,16rem] md:grid-rows-[16rem,16rem] lg:grid-cols-[18rem,18rem] lg:grid-rows-[18rem,18rem]"
+          >
+            <div className=" border-2 border-red-900 min-[375px]:min-h-[10rem] sm:min-h-[15rem] md:min-h-auto   p-1 min-[375px]:p-4 rounded-xl bg-[#EDEDED] shadow-sm">
+              asdasdasdsad
+            </div>
+            <div className=" border-2 border-red-900 min-[375px]:min-h-[10rem] sm:min-h-[15rem] md:min-h-auto   p-1 min-[375px]:p-4 rounded-xl bg-[#EDEDED] shadow-sm">
+              asdasdasdsad
+            </div>
+            <div className="border-2 border-red-900 min-[375px]:min-h-[10rem]  sm:min-h-[15rem] md:min-h-auto   p-1 min-[375px]:p-4 rounded-xl bg-[#EDEDED] shadow-sm">
+              asdasdasdsad
+            </div>
+            <div className=" border-2 border-red-900 min-[375px]:min-h-[10rem] sm:min-h-[15rem] md:min-h-auto  p-1 min-[375px]:p-4 rounded-xl bg-[#EDEDED] shadow-sm">
+              asdasdasdsad
+            </div>
+            <div className="graph__lines absolute top-0 left-0 w-full h-full">
+              <svg
+                className="absolute top-0 left-0"
+                xmlns="http://www.w3.org/2000/svg"
+                width="21.414"
+                height="12.121"
+                viewBox="0 0 21.414 12.121"
+              >
+                <path
+                  id="Path_1180"
+                  data-name="Path 1180"
+                  d="M-1704-7625l10-10,10,10"
+                  transform="translate(1704.707 7636.414)"
+                  fill="#DDDDDD"
+                  stroke="#DDDDDD"
+                  stroke-width="2"
+                ></path>
+              </svg>
+              <svg
+                className="absolute bottom-0 right-0"
+                xmlns="http://www.w3.org/2000/svg"
+                width="12.121"
+                height="21.414"
+                viewBox="0 0 12.121 21.414"
+              >
+                <path
+                  id="Path_1181"
+                  data-name="Path 1181"
+                  d="M-1704-7625l10-10,10,10"
+                  transform="translate(-7624.293 1704.707) rotate(90)"
+                  fill="#DDDDDD"
+                  stroke="#DDDDDD"
+                  stroke-width="2"
+                ></path>
+              </svg>
             </div>
           </div>
         </div>
@@ -33,4 +66,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default PerformanceChart;

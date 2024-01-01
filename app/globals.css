@@ -19,3 +19,23 @@
   position: absolute;
   border-color: black  transparent transparent transparent;
 }
+
+.graph__lines::before{
+  content: "";
+    position: absolute;
+    width: 2px;
+    height: calc(100% - 12px);
+    background-color: #ddd;
+    left: 10px;
+    bottom: 10px;
+}
+
+.graph__lines::after{
+  content: "";
+    position: absolute;
+    width: calc(100% - 12px);
+    height: 2px;
+    background-color: #ddd;
+    bottom: 10px;
+    left: 10px;
+}
