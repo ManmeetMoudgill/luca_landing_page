@@ -1,6 +1,7 @@
 import About from "@/components/about";
 import IntroductionContainer from "@/components/introductionContainer";
 import Information from "@/components/information";
+import PerformanceChart from "@/components/performanceChart";
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <IntroductionContainer />
       <About />
       <Information />
+      <PerformanceChart />
     </main>
   );
 }
