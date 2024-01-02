@@ -58,4 +58,7 @@
 }
 .bg_img{
   background-image: url("/assets/images/level.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
