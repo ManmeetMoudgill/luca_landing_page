@@ -5,7 +5,7 @@ type Props = {};
 
 const Reviews = (props: Props) => {
   return (
-    <div className="px-[1.5rem] md:px-[5rem]">
+    <section id="recensioni" className="px-[1.5rem] md:px-[5rem]">
       <div className="py-8 md:py-12 relative ">
         <div className="flex flex-col justify-center items-center ">
           <h2 className="text-2xl md:text-4xl text-center lg:text-left text-black font-bold px-4">
@@ -51,7 +51,7 @@ const Reviews = (props: Props) => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -3,7 +3,7 @@ import PictureInfo from "../shared/pictureInfo";
 import { PARA1 } from "./constants";
 const index = () => {
   return (
-    <div>
+    <section id="risultati">
       <PictureInfo
         title="The EA that cracked the AI formula"
         heading="PERCEPTRADER AI"
@@ -25,7 +25,7 @@ const index = () => {
         positionImg="left"
         imgSource="/assets/images/3.jpeg"
       />
-    </div>
+    </section>
   );
 };
 

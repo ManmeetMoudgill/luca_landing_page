@@ -4,7 +4,10 @@ import LinkText from "../shared/linkText";
 import GreenText from "../shared/greenText";
 const About = () => {
   return (
-    <div className="text-[#707070] text-xl px-[1.5rem] md:px-[5rem]  justify-center items-center">
+    <section
+      id="chiSono"
+      className="text-[#707070] text-xl px-[1.5rem] md:px-[5rem]  justify-center items-center"
+    >
       <div className=" justify-center items-center py-8 md:py-12">
         <div className="md:mx-auto md:w-[90%] lg:w-[60%]">
           <div className="flex flex-col justify-between items-center md:flex-row ">
@@ -46,7 +49,7 @@ const About = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

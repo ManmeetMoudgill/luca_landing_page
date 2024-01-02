@@ -6,7 +6,10 @@ type Props = {};
 
 const Footer = (props: Props) => {
   return (
-    <div className="bg-black text-white py-5 px-10 flex flex-col lg:flex-row lg:justify-around">
+    <footer
+      id="contattaCi"
+      className="bg-black text-white py-5 px-10 flex flex-col lg:flex-row lg:justify-around"
+    >
       <div className="flex flex-col">
         <span className="text-xl mt-3">Follow me on social media</span>
         <div className="flex items-center my-5">
@@ -29,7 +32,7 @@ const Footer = (props: Props) => {
           ))}
         </div>
       </div>
-    </div>
+    </footer>
   );
 };
 

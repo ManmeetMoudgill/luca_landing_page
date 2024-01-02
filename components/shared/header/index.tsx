@@ -14,7 +14,7 @@ const Header = (props: HeaderProps) => {
   disableScroolbar({ condition: isSidebarOpen });
 
   return (
-    <>
+    <header>
       <div className="bg-black px-2 md:px-7 py-5 lg:px-5 lg:py-5 flex  justify-center items-center  ">
         <div className="hidden  lg:w-[89%] xl:w-[80%] 2xl:w-[65%]  p-2 lg:flex items-center">
           {/* LEFT UPPER CONTAINER */}
@@ -61,7 +61,7 @@ const Header = (props: HeaderProps) => {
         currentActiveLink={currentActiveLink}
         setCurrentActiveLink={setCurrentActiveLink}
       />
-    </>
+    </header>
   );
 };
 
