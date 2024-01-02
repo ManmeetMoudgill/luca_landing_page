@@ -21,9 +21,7 @@ const useClickOutside = <T extends HTMLElement>({
   const handleClickOutside = useCallback(
     (event: MouseEvent) => {
       if (ref?.current && !ref.current.contains(event.target as Node)) {
-        console.log("target element", event?.target as Node);
         if (isCallbackEnabled && callback) {
-          console.log("inside the if statement");
           callback();
         }
         setIsClickedOutside(true);
@@ -41,10 +39,6 @@ const useClickOutside = <T extends HTMLElement>({
       document.removeEventListener("mousedown", handleClickOutside);
     };
   }, [handleClickOutside]);
-
-  useEffect(() => {
-    console.log("useClickOutside", isClickedOutside);
-  }, [isClickedOutside]);
 
   return {
     isClickedOutside,
