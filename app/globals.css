@@ -9,6 +9,57 @@
   font-family: 'Rubik', sans-serif;
   scroll-behavior: smooth;
 }
+.bg_img_review {
+  position: relative;
+}
+
+.bg_img_review::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("/assets/images/bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  opacity: 0.8;
+  z-index: -1; 
+}
+
+.open{
+  animation: anima_open 0.5s ease-in-out  ;
+  transition: all 0.5s ease-in-out ;
+
+}
+@keyframes anima_open{
+  0%{
+     height: 0;
+    opacity: 0;
+  }
+  100%{
+    height: 200px;
+    opacity: 1;
+
+  }
+}
+.close{
+  animation: anima_close 0.5s ease-in-out  ;
+  transition: all 0.5s ease-in-out ;
+}
+@keyframes anima_close{
+  0%{
+    height: 200px;
+    opacity: 1;
+  }
+
+  100%{
+    height: 0;
+    opacity: 0;
+
+  }
+}
 .top_left_rotate{
   transform: rotate(270deg);
 }

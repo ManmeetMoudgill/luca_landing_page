@@ -7,6 +7,7 @@ import OnceAgain from "@/components/onceAgain";
 import Result from "@/components/result";
 import NextLevel from "@/components/nextLevel";
 import CalcTrading from "@/components/calc";
+import FAndQ from "@/components/fAndQ";
 export default function Home() {
   return (
     <main className="flex  flex-col ">
@@ -18,6 +19,7 @@ export default function Home() {
       <Result />
       <OnceAgain />
       <Reviews />
+      <FAndQ />
       <NextLevel />
     </main>
   );
