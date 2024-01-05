@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { IoIosArrowDown } from "react-icons/io";
 import { IoIosArrowUp } from "react-icons/io";
 
-const index = ({ headText, paragraphs }: Props) => {
+const AccordionContainer = ({ headText, paragraphs }: Props) => {
   const [show, setShow] = useState(false);
   const handleClick = () => {
     setShow(!show);
@@ -41,4 +41,4 @@ const index = ({ headText, paragraphs }: Props) => {
   );
 };
 
-export default index;
+export default AccordionContainer;

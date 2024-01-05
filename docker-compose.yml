@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  luca_trading_app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3004:3004"
+    environment:
+      - NODE_ENV=production
+      - PORT=3004
