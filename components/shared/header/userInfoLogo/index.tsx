@@ -15,7 +15,7 @@ const UserInformationLogo = (props: Props) => {
             <Link href="/">
               <Image
                 priority={true}
-                src="/assets/images/site_img.jpeg"
+                src="/assets/images/site_img.webp"
                 alt="Picture of the author"
                 width={216}
                 height={216}

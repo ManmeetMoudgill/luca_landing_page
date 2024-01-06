@@ -14,7 +14,7 @@ const About = () => {
             <div className="mx-2 ">
               <div className="border-2 border-[#5FFDAA] p-[0.5rem] rounded-full w-[7rem] h-[7rem] ">
                 <Image
-                  src="/assets/images/site_img.jpeg"
+                  src="/assets/images/site_img.webp"
                   alt="Profile pic"
                   width={114}
                   height={114}
