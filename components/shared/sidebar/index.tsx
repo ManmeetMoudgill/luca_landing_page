@@ -18,7 +18,6 @@ const SideBar = ({
   const handle = () => {
     setSidebarOpen!(!isSideBarOpen);
   };
-  /* console.log("inside the sidebar") */
   return (
     <div
       className={`  ${
