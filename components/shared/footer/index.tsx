@@ -13,10 +13,10 @@ const Footer = (props: Props) => {
       <div className="flex flex-col">
         <span className="text-xl mt-3">Follow me on social media</span>
         <div className="flex items-center my-5">
-          <div className="hover:bg-black mr-3 transition-all delay-75 ease-in-out lg:mr-5 rounded-lg p-2 border border-[#5FFDAA] bg-[#5FFDAA] cursor-pointer">
+          <div className="hover:bg-black mr-3 transition-all delay-75 ease-in-out lg:mr-5 rounded-lg p-2 border border_color bg_text cursor-pointer">
             <FaLocationArrow className="text-xl" />
           </div>
-          <div className="hover:bg-black transition-all delay-75 ease-in-out rounded-lg p-2 border border-[#5FFDAA] bg-[#5FFDAA] cursor-pointer">
+          <div className="hover:bg-black transition-all delay-75 ease-in-out rounded-lg p-2 border_color bg_text cursor-pointer">
             <FaYoutube className="text-xl" />
           </div>
         </div>

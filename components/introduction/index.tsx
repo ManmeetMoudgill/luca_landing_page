@@ -10,9 +10,7 @@ const IntroductionContainer = (props: Props) => {
         <div className=" w-[96%] sm:w-[93%] md:w-[90%] lg:w-[85%] xl:w-[65%]  p-6 flex justify-center items-center flex-col">
           <h2 className="text-white font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-center md:leading-[4rem] lg:leading-snug">
             Industry-leading{" "}
-            <b className="bg-[#5FFDAA] text-black font-extrabold">
-              Expert Advisors
-            </b>{" "}
+            <b className="bg_text text-black font-extrabold">Expert Advisors</b>{" "}
             for MetaTrader 4/5
           </h2>
           <div className="flex justify-center items-center">

@@ -16,7 +16,7 @@ const index = () => {
         heading="PERCEPTRADER AI"
         paragraphs={PARA1}
         positionImg="right"
-        imgSource="/assets/images/2.webp"
+        imgSource="/assets/images/2.jpeg"
       />
       <PictureInfo
         title="The EA that cracked the AI formula"

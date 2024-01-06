@@ -12,7 +12,7 @@ const Reviews = (props: Props) => {
             Ecco perché.. i risultati contano! 💸
           </h2>
           <div className="w-[95%] sm:w-[85%] md:w-[80%]  xl:w-[75%] 2xl:w-[50%] 3xl:w-[60%] px-1 py-3  grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2  gap-3 mt-8">
-            <div className="py-4 bg_img_review rounded-3xl   shadow-3xl h-[60vh] lg:h-[80vh]  border-2 border-[#5FFDAA] group   cursor-pointer overflow-hidden">
+            <div className="py-4 bg_img_review rounded-3xl   shadow-3xl h-[60vh] lg:h-[80vh]  border_color group   cursor-pointer overflow-hidden">
               <Image
                 src="/assets/images/review_1.webp"
                 width={320}
@@ -21,7 +21,7 @@ const Reviews = (props: Props) => {
                 alt="review"
               />
             </div>
-            <div className="py-4 bg_img_review rounded-3xl  shadow-3xl h-[60vh] lg:h-[80vh]   border-2 border-[#5FFDAA] group cursor-pointer overflow-hidden">
+            <div className="py-4 bg_img_review rounded-3xl  shadow-3xl h-[60vh] lg:h-[80vh]   border-2 border_color group cursor-pointer overflow-hidden">
               <Image
                 src="/assets/images/review_2.webp"
                 width={320}
@@ -30,7 +30,7 @@ const Reviews = (props: Props) => {
                 alt="review"
               />
             </div>
-            <div className="py-4 bg_img_review rounded-3xl  shadow-3xl h-[60vh] lg:h-[80vh]  border-2 border-[#5FFDAA] group cursor-pointer overflow-hidden">
+            <div className="py-4 bg_img_review rounded-3xl  shadow-3xl h-[60vh] lg:h-[80vh]  border_color group cursor-pointer overflow-hidden">
               <Image
                 src="/assets/images/review_3.webp"
                 width={320}
@@ -39,7 +39,7 @@ const Reviews = (props: Props) => {
                 alt="review"
               />
             </div>
-            <div className="py-4 bg_img_review rounded-3xl  shadow-3xl h-[60vh] lg:h-[80vh]   border-2 border-[#5FFDAA] group cursor-pointer overflow-hidden">
+            <div className="py-4 bg_img_review rounded-3xl  shadow-3xl h-[60vh] lg:h-[80vh]   border_color group cursor-pointer overflow-hidden">
               <Image
                 src="/assets/images/review_4.webp"
                 width={320}

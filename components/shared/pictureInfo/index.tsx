@@ -46,7 +46,7 @@ const index = ({
             } w-full lg:w-[50%] px-6 pb-6 sm:px-8 md:px-10 lg:pl-0 sm:pb-8   lg:py-16 flex flex-col justify-center items-center `}
           >
             <p className="text-base my-2">"{title}"</p>
-            <p className="text-3xl text-[#5FFDAA] my-2">{heading}</p>
+            <p className="text-3xl text_color my-2">{heading}</p>
             <div className="text-lg mt-8">
               {paragraphs?.map((item, index) => (
                 <p key={index} className="mb-4 leading-6">

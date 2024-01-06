@@ -40,7 +40,7 @@ const NavbarListItem = ({
       <span
         className={`w-[0px] ${
           !isForMobileDevice ? "group-hover:w-full" : ""
-        } transition-all delay-75 ease-in-out min-h-[2px] bg-[#3cd13e]`}
+        } transition-all delay-75 ease-in-out min-h-[2px] bg_text`}
       ></span>
     </li>
   );

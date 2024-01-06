@@ -36,9 +36,9 @@ const Header = (props: HeaderProps) => {
           </div>
 
           <div className="flex items-center ">
-            <div className="border-[2px] rounded-md shadow-md border-green-200 w-[2.3rem] h-[2.3rem] sm:w-[2.7rem] sm:h-[2.7rem] flex justify-center items-center">
+            <div className="border-[2px] rounded-md shadow-md border_color w-[2.3rem] h-[2.3rem] sm:w-[2.7rem] sm:h-[2.7rem] flex justify-center items-center">
               <div
-                className="w-[1.6rem] h-[1.6rem] sm:w-[2.1rem] sm:h-[2.1rem] flex justify-center items-center bg-[#5FFDAA]"
+                className="w-[1.6rem] h-[1.6rem] sm:w-[2.1rem] sm:h-[2.1rem] flex justify-center items-center bg_text"
                 onClick={(e) => {
                   e.stopPropagation();
                   setIsSidebarOpen(!isSidebarOpen);

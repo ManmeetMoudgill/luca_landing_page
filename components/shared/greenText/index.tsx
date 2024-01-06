@@ -6,7 +6,7 @@ const index = ({ text }: Props) => {
   return (
     <>
       &nbsp;
-      <span className="font-bold bg-[#5FFDAA] text-black">{text}</span>
+      <span className={`font-bold   bg_text text-black`}>{text}</span>
       &nbsp;
     </>
   );

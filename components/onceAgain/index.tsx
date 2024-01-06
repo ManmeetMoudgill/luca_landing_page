@@ -9,7 +9,7 @@ const OnceAgain = (props: Props) => {
     <div className="py-8 md:py-12 relative ">
       <div className="flex justify-center items-center py-10 bg-black">
         <div className=" flex flex-col items-center justify-center w-[90%] sm:w-[80%] md:w-[70%]   lg:w-[60%]">
-          <h3 className="text-[#5FFDAA] text-xl lg:text-2xl font-bold my-2 uppercase">
+          <h3 className="text_color text-xl lg:text-2xl font-bold my-2 uppercase">
             Di nuovo
           </h3>
           <h2 className="my-2 w-full  sm:w-[90%] lg:w-[70%] text-white font-bold text-3xl lg:text-[45px]  leading-tight text-center">

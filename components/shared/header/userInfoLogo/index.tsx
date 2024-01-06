@@ -10,7 +10,7 @@ const UserInformationLogo = (props: Props) => {
     <div className=" w-auto lg:w-[30%] flex items-center ">
       {/*  */}
       <div className="mx-1">
-        <div className="border-2 border-[#5FFDAA] w-[3.3rem] h-[3.3rem] sm:w-[4.3rem] sm:h-[4.3rem]  md:w-[6rem] md:h-[6rem] rounded-full flex justify-center items-center">
+        <div className="border_color w-[3.3rem] h-[3.3rem] sm:w-[4.3rem] sm:h-[4.3rem]  md:w-[6rem] md:h-[6rem] rounded-full flex justify-center items-center">
           <div className="w-[2.6rem] h-[2.6rem] sm:w-[3.6rem] sm:h-[3.6rem]  md:w-[5.3rem] md:h-[5.3rem] rounded-full">
             <Link href="/">
               <Image
@@ -32,7 +32,10 @@ const UserInformationLogo = (props: Props) => {
           <span className="text-white text-base md:text-lg">
             Luca Cupellaro
           </span>
-          <MdVerified color="#3cd13e" className="text-base sm:text-lg ml-2" />
+          <MdVerified
+            // color="#3cd13e"
+            className="text_color text-base sm:text-lg ml-2"
+          />
         </div>
         <div>
           <span className="text-[#707070] text-xs sm:text-sm font-light">

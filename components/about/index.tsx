@@ -12,7 +12,7 @@ const About = () => {
         <div className="md:mx-auto md:w-[90%] lg:w-[60%]">
           <div className="flex flex-col justify-between items-center md:flex-row ">
             <div className="mx-2 ">
-              <div className="border-2 border-[#5FFDAA] p-[0.5rem] rounded-full w-[7rem] h-[7rem] ">
+              <div className="border_color p-[0.5rem] rounded-full w-[7rem] h-[7rem] ">
                 <Image
                   src="/assets/images/site_img.webp"
                   alt="Profile pic"
