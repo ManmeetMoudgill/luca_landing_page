@@ -4,13 +4,13 @@ import { RiInstagramFill } from "react-icons/ri";
 import { FaTelegram } from "react-icons/fa";
 const index = () => {
   return (
-    <div className="text-[#707070] h-[80vh] text-xl px-[1.5rem] md:px-[5grem]  justify-center items-center">
+    <div className=" text-[#707070] h-[80vh] text-xl px-[1.5rem] md:px-[5grem]  justify-center items-center">
       <div className="h-full justify-center items-center py-8 md:py-12">
-        <div className="h-full border border-gray-300  rounded-2xl flex flex-col justify-center items-center mx-auto max-w-[55rem]">
+        <div className="h-full border border-gray-300 shadow-xl  rounded-2xl flex flex-col justify-center items-center mx-auto max-w-[55rem]">
           <p className=" my-2  text-2xl text-center text-black">
             <u> Entra per rimane aggiornato su ogni news!</u>
           </p>
-          <div className="mb-2 lg:mb-4 flex justify-between items-center w-[20%] z-10">
+          <div className="mb-3 lg:mb-4 flex justify-between items-center w-[20%] z-10">
             <button
               className="bg-white animate-spin"
               onClick={() => {
