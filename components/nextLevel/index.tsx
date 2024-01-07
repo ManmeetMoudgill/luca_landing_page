@@ -21,7 +21,7 @@ const NextLevel = () => {
                     className=" text-2xl md:text-4xl  cursor-pointer "
                   />
                 }
-                link="www.instagram.com"
+                link="https://www.instagram.com/_sniperforex_/?igsh=dmswbHdwbHVyMzRz"
               />
               <Social
                 icon={
@@ -30,7 +30,7 @@ const NextLevel = () => {
                     className=" text-2xl md:text-4xl  cursor-pointer "
                   />
                 }
-                link="www.instagram.com"
+                link="https://t.me/+CN-IFAUMtKtjYmRk"
               />
             </div>
           </div>
