@@ -34,6 +34,7 @@ const index = ({
             <Image
               src={imgSource}
               alt="imagefortext"
+              priority={true}
               width={1000}
               height={1000}
               className=" w-[300px] h-[300px] md:w-[400px] md:h-[400px] lg:w-[500px] lg:h-[500px] object-contain "
