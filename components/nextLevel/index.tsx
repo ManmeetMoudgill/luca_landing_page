@@ -7,11 +7,12 @@ const NextLevel = () => {
     <div className="text-[#707070] text-xl px-[1.5rem] md:px-[5rem]  justify-center items-center">
       <div className=" justify-center items-center py-8 md:py-12">
         <div className="bg_img p-12 lg:p-28 rounded-2xl flex flex-col justify-center items-center mx-auto max-w-[55rem]">
-          <p className="my-2">AND IF YOU'RE ALL CAUGHT-UP…</p>
-          <p className="mb-6 text-white text-3xl text-center">
-            It's time for you to take your trading to the next level
+          <p className="my-2 text-3xl">
+            {" "}
+            Entra per rimanere aggiornato su ogni news!
           </p>
-          <div className="flex mt-4">
+
+          <div className="flex mt-6">
             {/* left part */}
             <div className="flex justify-center items-center mx-3">
               <Social
