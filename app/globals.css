@@ -147,3 +147,11 @@
   border-radius: 5px;
   background-repeat: no-repeat;
 }
+
+.bg_img{
+  background-image: url("/assets/images/level.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  z-index: -1;
+}

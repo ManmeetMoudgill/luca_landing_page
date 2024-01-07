@@ -8,6 +8,7 @@ import Result from "@/components/result";
 import NextLevel from "@/components/nextLevel";
 import CalcTrading from "@/components/calc";
 import FAndQ from "@/components/fAndQ";
+import Calendly from "@/components/calendly";
 export default function Home() {
   return (
     <main className="flex  flex-col ">
@@ -21,6 +22,7 @@ export default function Home() {
       <Reviews />
       <FAndQ />
       <NextLevel />
+      <Calendly />
     </main>
   );
 }

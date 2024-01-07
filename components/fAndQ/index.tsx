@@ -11,7 +11,7 @@ const paragraphs1: ParagraphsProps[] = [
 ];
 const index = () => {
   return (
-    <div className="my-10 max-w-[95%] mx-auto w-[50rem]">
+    <div className="my-10 max-w-[90%] md:max-w-[95%] mx-auto w-[50rem]">
       <h1 className="text-3xl font-bold text-center mb-10">
         Got some remaining questions?
       </h1>
