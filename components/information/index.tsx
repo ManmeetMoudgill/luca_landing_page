@@ -7,59 +7,36 @@ const index = () => {
       <div className=" justify-center items-center py-8 md:py-12">
         <div className="md:mx-auto md:w-[90%] lg:w-[60%]">
           <div className="flex flex-col justify-between items-center ">
-            <p className=" text-[#707070]">AND LET ME TELL YOU THIS</p>
+            <p className=" text-[#707070]">Quale é il vostro segreto?</p>
             <p className="text-3xl font-bold leading-14 mt-3 mb-12  text-center break-words">
-              The secret is to auto-trade with a robot that is not only
-              profitable, but also stable
+              Il nostro segreto e il Money Management che un pilastro solido di
+              questo settore.
             </p>
           </div>
           <div className="mt-4">
             <p className="mb-4">
-              How many “+50% a month” Expert Advisors have you seen being
-              aggressively advertised? How many of those ended up blowing your
-              account in a few months?
+              La nostra esperienza pluriennale ci ha consentito di esplorare,
+              testare e perfezionare oltre
+              <GreenText text="1000 strategie " />
+              robotizzate. Il nostro obiettivo principale è individuare e
+              offrire solo le strategie più solide e durature nel tempo.
             </p>
             <p className="mb-4">
-              There are lots of EAs that can give juicy returns in the short
-              term, but don't be fooled. It is no secret:
-              <LinkText text="hundreds of studies" />
-              how that in 90 days or less, 94% of retail traders lose all their
-              initial investments
+              Operiamo con una filosofia incentrata sull'eccellenza e
+              sull'adattabilità al mutevole panorama del mercato finanziario. Ci
+              impegniamo costantemente per portare ai nostri clienti solo le
+              strategie più consistenti, quelle che dimostrano di poter
+              resistere nel lungo periodo,
+              <GreenText text="garantendo affidabilità e successo" />
+              nel trading.
             </p>
+
             <p className="mb-4">
-              That means that
-              <GreenText text="only the remaining 6%" />
-              is able to make money and sustain their profits after a three
-              months period
-            </p>
-            <p className="mb-4">
-              When you've been trading the markets for some time, you know for a
-              fact that any algo-trading system which doesn't have
-              <GreenText text="at least 2 years of track-record results" />
-              can not be called "proven"
-            </p>
-            <p className="mb-4">
-              You can find thousands of "holy-grail", "money-making-machines"
-              Expert Advisors that promise incredible monthly returns and early
-              retirement for anyone who pays the price
-            </p>
-            <p className="mb-4">
-              Here's the thing: If you want to achieve long-term trading success
-              like the top performers of the industry, you need trading systems
-              that not only have positive results but also can
-              <GreenText text="maintain them over time" />
-            </p>
-            <p className="mb-4">
-              That's why in order to keep consistent mid and long-term profits,
-              I am constantly optimizing, updating, and applying the
-              <GreenText text="latest innovations" />
-              to all of my Expert Advisors
-            </p>
-            <p className="">
-              That's why can trust
-              <LinkText text="up to 5 years of proven track records" />
-              on live accounts as well as hundreds of 5-star reviews from happy
-              long-term clients for all of my Expert Advisors
+              In SniperForex, crediamo che il successo nel trading non sia solo
+              una questione di rendimenti immediati, ma piuttosto di una
+              crescita costante e sostenibile nel tempo. Le nostre strategie
+              selezionate con cura mirano a fornire una base solida su cui
+              costruire il vostro percorso nel mondo del trading.
             </p>
           </div>
         </div>
