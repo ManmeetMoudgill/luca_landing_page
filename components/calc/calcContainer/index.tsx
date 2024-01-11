@@ -1,11 +1,14 @@
 "use client";
 import Image from "next/image";
-import React, { useEffect } from "react";
+import React, { use, useEffect, useState } from "react";
 
 interface CalcTradingItemProps {
   imgUrl?: string;
 }
-
+interface FormTypes {
+  initialValue: number;
+  // months: number;
+}
 const CalcTradingItem = ({ imgUrl }: CalcTradingItemProps) => {
   const [rangeValue, setRangeValue] = React.useState(0);
   const ref = React.useRef<HTMLInputElement>(null);
@@ -21,6 +24,61 @@ const CalcTradingItem = ({ imgUrl }: CalcTradingItemProps) => {
       rangeInput.style.backgroundSize = `${percent}% 100%`;
     }
   }, [rangeValue, ref]);
+  const [form, setForm] = useState<FormTypes>({
+    initialValue: 0,
+    // months: 0,
+  });
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    const { name, value } = e.target;
+    setForm({ ...form, [name]: value });
+  };
+  const [profit, setProfit] = useState(0);
+  const [monthGain, setMonthGain] = useState(0);
+  const [drawdown, setDrawdown] = useState(0);
+
+  const [selectedValue, setSelectedValue] = useState("");
+
+  const handleRadioChange = (e: any) => {
+    setSelectedValue(e.target.value);
+  };
+  useEffect(() => {
+    const profitCalc = () => {
+      console.log("Selected value:", selectedValue);
+      if (selectedValue === "low") {
+        setProfit(
+          form.initialValue * 3 * (rangeValue / 100) + form.initialValue
+        );
+        setMonthGain(3);
+        setDrawdown(10);
+      }
+      if (selectedValue === "moderate") {
+        setProfit(
+          form.initialValue * 6 * (rangeValue / 100) + form.initialValue
+        );
+        setMonthGain(6);
+        setDrawdown(25);
+      }
+
+      if (selectedValue === "significant") {
+        setProfit(
+          form.initialValue * 9 * (rangeValue / 100) + form.initialValue
+        );
+        setMonthGain(9);
+        setDrawdown(40);
+      }
+      if (selectedValue === "high") {
+        setProfit(
+          form.initialValue * 12 * (rangeValue / 100) + form.initialValue
+        );
+        setMonthGain(3);
+        setDrawdown(45);
+      }
+    };
+    profitCalc();
+  }, [selectedValue, form.initialValue, rangeValue]);
+  console.log(selectedValue, form.initialValue, rangeValue, profit);
 
   return (
     <div className="b flex justify-center items-center p-3 sm:p-8">
@@ -30,6 +88,9 @@ const CalcTradingItem = ({ imgUrl }: CalcTradingItemProps) => {
           <div className="deposti__part ">
             <h3 className="text-base sm:text-xl  font-bold">Deposit</h3>
             <input
+              name="initialValue"
+              value={form.initialValue}
+              onChange={handleChange}
               type="number"
               min={0}
               className="pl-4 pr-4 pt-2 pb-2 mt-2 w-full outline-none border-black border-1 shadow-2xl text-base sm:text-xl rounded-lg"
@@ -48,6 +109,9 @@ const CalcTradingItem = ({ imgUrl }: CalcTradingItemProps) => {
                   name="risk"
                   id="risk1"
                   className="w-4 h-4 mr-2"
+                  value="low"
+                  checked={selectedValue === "low"}
+                  onChange={handleRadioChange}
                 />
                 <label className="text-xs sm:text-lg" htmlFor="risk1">
                   Low
@@ -59,6 +123,9 @@ const CalcTradingItem = ({ imgUrl }: CalcTradingItemProps) => {
                   name="risk"
                   id="risk2"
                   className="w-4 h-4 mr-2"
+                  value="moderate"
+                  checked={selectedValue === "moderate"}
+                  onChange={handleRadioChange}
                 />
                 <label className="text-xs sm:text-lg" htmlFor="risk2">
                   Moderate
@@ -70,6 +137,9 @@ const CalcTradingItem = ({ imgUrl }: CalcTradingItemProps) => {
                   name="risk"
                   id="risk3"
                   className="w-4 h-4 mr-2"
+                  value="significant"
+                  checked={selectedValue === "significant"}
+                  onChange={handleRadioChange}
                 />
                 <label className="text-xs sm:text-lg" htmlFor="risk3">
                   Significant
@@ -81,6 +151,9 @@ const CalcTradingItem = ({ imgUrl }: CalcTradingItemProps) => {
                   name="risk"
                   id="hight"
                   className="w-4 h-4 mr-2"
+                  value="high"
+                  checked={selectedValue === "high"}
+                  onChange={handleRadioChange}
                 />
                 <label className="text-xs sm:text-lg" htmlFor="hight">
                   High
@@ -160,7 +233,7 @@ const CalcTradingItem = ({ imgUrl }: CalcTradingItemProps) => {
               Total Profit
             </h3>
             <span className="text-[#0df0f8] text-3xl sm:text-5xl font-extrabold">
-              $ 14587
+              {profit}
             </span>
           </div>
           <div className=" my-6 ">
@@ -168,7 +241,7 @@ const CalcTradingItem = ({ imgUrl }: CalcTradingItemProps) => {
               Montly Gain
             </h3>
             <span className="text-[#0df0f8] text-3xl sm:text-5xl font-extrabold">
-              2.43%
+              {monthGain}
             </span>
           </div>
           <div className=" my-6 ">
@@ -176,7 +249,7 @@ const CalcTradingItem = ({ imgUrl }: CalcTradingItemProps) => {
               Drawdown
             </h3>
             <span className="text-[#0df0f8] text-3xl sm:text-5xl font-extrabold">
-              6.43%
+              {drawdown}
             </span>
           </div>
         </div>
