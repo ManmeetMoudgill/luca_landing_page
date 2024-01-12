@@ -233,7 +233,7 @@ const CalcTradingItem = ({ imgUrl }: CalcTradingItemProps) => {
               Total Profit
             </h3>
             <span className="text-[#0df0f8] text-3xl sm:text-5xl font-extrabold">
-              {profit}
+              $ {profit}
             </span>
           </div>
           <div className=" my-6 ">
@@ -241,7 +241,7 @@ const CalcTradingItem = ({ imgUrl }: CalcTradingItemProps) => {
               Montly Gain
             </h3>
             <span className="text-[#0df0f8] text-3xl sm:text-5xl font-extrabold">
-              {monthGain}
+              {monthGain}%
             </span>
           </div>
           <div className=" my-6 ">
@@ -249,7 +249,7 @@ const CalcTradingItem = ({ imgUrl }: CalcTradingItemProps) => {
               Drawdown
             </h3>
             <span className="text-[#0df0f8] text-3xl sm:text-5xl font-extrabold">
-              {drawdown}
+              {drawdown}%
             </span>
           </div>
         </div>
