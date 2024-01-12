@@ -11,7 +11,7 @@ const AccordionContainer = ({ headText, paragraphs }: Props) => {
   return (
     <div className="bg-[#F4F4F4]  flex flex-col justify-center items-center p-4 md:px-[5rem] md:py-6 rounded-xl border-b-4 border-[#dfdfdf] mb-6">
       <div className="flex  justify-between items-center w-full">
-        <h1 className="font-bold text-xl"> {headText}</h1>
+        <h1 className="font-bold text-lg sm:text-xl"> {headText}</h1>
         <div className=" transition-all duration-75 ">
           {show ? (
             <IoIosArrowUp
