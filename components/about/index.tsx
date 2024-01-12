@@ -32,19 +32,15 @@ const About = () => {
           </div>
           <div className="mt-12">
             <p className="mb-4">
-              I've been developing algo-trading systems for over 10 years, with
-              some of them reaching
-              <LinkText text="+7800% account growth" />
-              with over +67 consecutive months in profit, all of which live
-              track-records are available on my verified
-              <LinkText text="MyFxBook" />
-              profile as well as on the live signals of my
-              <LinkText text="MQL market profile" />
+              Benvenuti in SniperForex, leader consolidato nel settore del
+              trading. Da molti anni, abbiamo dedicato il nostro impegno a
+              offrire servizi di qualità, mettendo a punto
+              <GreenText text="strategie avanzate e soluzioni innovative" />
+              nel mondo del trading online.
             </p>
             <p className="mb-4">
-              So trust me. I'm an expert when it comes to developing EAs that
-              will exploit market opportunities to
-              <GreenText text="make you big profits on autopilot" />
+              Ecco una possibile presentazione del
+              <LinkText text="vostro progetto" />
             </p>
           </div>
         </div>
