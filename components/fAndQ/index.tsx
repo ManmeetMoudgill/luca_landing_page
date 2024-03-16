@@ -1,5 +1,6 @@
 import React from "react";
 import AccordianContainer from "../shared/accordianContainer";
+import AnimateInViewPort from "../shared/animate-in-view-port";
 
 const paragraphs1: ParagraphsProps[] = [
   {
@@ -26,14 +27,18 @@ const index = () => {
         If you need help with anything that's not here, do not hesitate to
         contact me via email or Telegram, and I'll be happy to respond to you
       </p>
-      <AccordianContainer
-        headText="What is the difference between buying on website or MQL?"
-        paragraphs={paragraphs1}
-      />
-      <AccordianContainer
-        headText="What is the difference between buying on website or MQL?"
-        paragraphs={paragraphs1}
-      />
+      <AnimateInViewPort>
+        <AccordianContainer
+          headText="What is the difference between buying on website or MQL?"
+          paragraphs={paragraphs1}
+        />
+      </AnimateInViewPort>
+      <AnimateInViewPort>
+        <AccordianContainer
+          headText="What is the difference between buying on website or MQL?"
+          paragraphs={paragraphs1}
+        />
+      </AnimateInViewPort>
     </div>
   );
 };

@@ -9,13 +9,20 @@ import NextLevel from "@/components/nextLevel";
 import CalcTrading from "@/components/calc";
 import FAndQ from "@/components/fAndQ";
 import Calendly from "@/components/calendly";
+import AnimateInViewPort from "@/components/shared/animate-in-view-port";
 export default function Home() {
   return (
     <main className="flex  flex-col ">
       <IntroductionContainer />
-      <About />
-      <Information />
-      <PerformanceChart />
+      <AnimateInViewPort>
+        <About />
+      </AnimateInViewPort>
+      <AnimateInViewPort>
+        <Information />
+      </AnimateInViewPort>
+      <AnimateInViewPort>
+        <PerformanceChart />
+      </AnimateInViewPort>
       <CalcTrading />
       <Result />
       <OnceAgain />

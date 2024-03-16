@@ -1,6 +1,7 @@
 import React from "react";
 import Approve from "./approve";
 import Reviews from "../shared/review";
+import AnimateInViewPort from "../shared/animate-in-view-port";
 
 type Props = {};
 
@@ -15,11 +16,13 @@ const OnceAgain = (props: Props) => {
           <h2 className="my-2 w-full  sm:w-[90%] lg:w-[70%] text-white font-bold text-3xl lg:text-[45px]  leading-tight text-center">
             Lasciando il tuo trading nelle mani dei miei EA potrai:
           </h2>
-          <div className="my-4 flex flex-col ">
-            <Approve text="Ottieni profitti costanti con il pilota automatico" />
-            <Approve text="pur mantenendo un drawdown basso" />
-            <Approve text="e goditi il reddito passivo" />
-          </div>
+          <AnimateInViewPort>
+            <div className="my-4 flex flex-col ">
+              <Approve text="Ottieni profitti costanti con il pilota automatico" />
+              <Approve text="pur mantenendo un drawdown basso" />
+              <Approve text="e goditi il reddito passivo" />
+            </div>
+          </AnimateInViewPort>
           <Reviews />
         </div>
       </div>
